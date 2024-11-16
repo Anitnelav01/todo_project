@@ -1,0 +1,29 @@
+.status,
+.participants {
+  margin-bottom: 20px;
+}
+
+.status-title {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+}
+
+.status-indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background: #f4822f;
+  margin-right: 1rem;
+}
+
+.status-block {
+  display: flex;
+}
+
+@media (max-width: 920px) {
+  .status-title {
+    font-size: 14px;
+  }
+}

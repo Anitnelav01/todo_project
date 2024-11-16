@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Header/Header";
+import SideMenu from "./components/SideMenu/SideMenu";
+import Content from "./components/Content/Content";
+import "./styles/global.scss";
 
 function App() {
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const handleMenuClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  const closeModal = () => {
+    setActiveIndex(null);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SideMenu activeIndex={activeIndex} onMenuClick={handleMenuClick} />
+      <Content activeIndex={activeIndex} onClose={closeModal} />
     </div>
   );
 }

@@ -1,0 +1,74 @@
+.execution-time-block {
+  margin-bottom: 20px;
+}
+
+.execution-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 15px;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: end;
+}
+
+.clock-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+
+.time-input {
+  height: 24px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 87px;
+}
+
+.title-container-position {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    color: #888888;
+  }
+}
+
+.container-time-input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 1rem;
+
+  .title-time-input {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+  }
+  input::placeholder {
+    color: #000;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 18.75px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .execution-title {
+    font-size: 14px;
+  }
+}

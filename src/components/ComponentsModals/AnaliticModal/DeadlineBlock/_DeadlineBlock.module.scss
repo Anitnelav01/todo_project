@@ -1,0 +1,63 @@
+.deadline-block {
+  margin-bottom: 20px;
+}
+
+.deadline-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 15px;
+}
+
+.title-container-position {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    color: #888888;
+  }
+}
+
+.deadline-info {
+  display: flex;
+  align-items: center;
+}
+
+.deadline-set {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.calendar-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.deadline-date {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1em;
+  color: #555;
+  span {
+    line-height: normal;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 920px) {
+  .deadline-title {
+    font-size: 14px;
+  }
+}

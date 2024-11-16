@@ -1,0 +1,45 @@
+.modal {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.modalContent {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow: hidden;
+  padding-bottom: calc(100px + 4rem);
+}
+
+.closeButton {
+  all: unset;
+  position: fixed;
+  font-size: 24px;
+  color: #fff;
+  background: transparent;
+  top: 5rem;
+  right: 2rem;
+  transition: color 0.3s;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.content {
+  height: 100%;
+  padding-top: 3rem;
+}
+
+.block_center {
+  position: absolute;
+  top: 14%;
+  left: calc(50% + 2rem);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  background: white;
+  width: 70%;
+  border-radius: 9px;
+}

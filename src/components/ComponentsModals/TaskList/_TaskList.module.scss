@@ -1,0 +1,78 @@
+.taskList {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 3rem;
+
+  li {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0rem;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16.41px;
+
+      input {
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+}
+
+.addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d6d6d6;
+  border-radius: 4px;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  color: #d6d6d6;
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+}
+
+.check-list {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.modal_header {
+  margin-bottom: 2rem;
+}
+
+.title_modal {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.13px;
+  margin-bottom: 1rem;
+}
+
+.desc_modal {
+  text-decoration-skip-ink: none;
+}
+
+.container-check-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.block_check_list,
+.block_list__title {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 920px) {
+  .title_modal {
+    font-size: 14px;
+  }
+}

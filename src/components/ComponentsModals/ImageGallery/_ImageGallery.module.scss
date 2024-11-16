@@ -1,0 +1,34 @@
+.imageContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.thumbnail {
+  width: 48%;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.largeImage {
+  width: 70%;
+  height: 70%;
+  transition: transform 0.5s ease-in-out;
+}

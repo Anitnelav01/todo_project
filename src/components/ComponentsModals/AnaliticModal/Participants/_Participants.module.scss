@@ -1,0 +1,53 @@
+.participants {
+  margin: 20px 0;
+}
+
+.participants-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  margin-bottom: 15px;
+}
+
+.avatars {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.avatar-wrapper {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.add-participant-button {
+  background-color: #d9d9d9;
+  color: #b0afaf;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 920px) {
+  .participants-title {
+    font-size: 14px;
+  }
+}

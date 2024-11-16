@@ -1,0 +1,23 @@
+.avatar {
+  display: flex;
+  flex-direction: column; /* Вертикальное размещение */
+  align-items: center; /* Центрирование по горизонтали */
+  justify-content: center; /* Центрирование по вертикали */
+  position: relative; /* Для позиционирования username */
+  overflow: hidden; /* Прячем лишнее содержимое */
+  border-radius: 50%; /* Круглая форма аватара */
+  border: 2px solid #ccc; /* Светлая рамка вокруг аватара */
+}
+
+.avatar-image {
+  width: 100%;
+  height: auto; /* Подстраиваем высоту под ширину */
+  border-radius: 50%; /* Круглая форма изображения */
+}
+
+.avatar-username {
+  margin-top: 5px; /* Отступ сверху */
+  font-size: 14px; /* Размер шрифта */
+  color: #333; /* Цвет текста имени */
+  text-align: center; /* Центрирование текста */
+}

@@ -1,0 +1,43 @@
+.analytics {
+  margin-bottom: 20px;
+}
+
+.analytics-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+  text-align: left;
+}
+.cube {
+  width: 34px;
+  height: 24px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+}
+.cubes {
+  display: flex;
+  justify-content: space-between;
+}
+.container-cubes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 920px) {
+  .analytics-title {
+    font-size: 14px;
+  }
+}
