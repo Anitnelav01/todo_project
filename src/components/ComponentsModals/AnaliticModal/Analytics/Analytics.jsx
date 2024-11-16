@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./_Analytics.module.scss"; // Импорт стилей
 
-const Analytics = ({ analyticsData }) => {
+const Analytics = ({ analyticsData, title }) => {
   return (
     <div className={styles["analytics"]}>
-      <h3 className={styles["analytics-title"]}>Аналитика</h3>
+      {title && <h3 className={styles["analytics-title"]}>{title}</h3>}
       <div className={styles["cubes"]}>
         {analyticsData.map((data, index) => (
           <div className={styles["container-cubes"]}>
@@ -14,7 +14,7 @@ const Analytics = ({ analyticsData }) => {
               className={styles["cube"]}
               style={{ backgroundColor: data.color }}
             >
-              <div className={styles["number"]}>{data.number}</div>
+              <div className={styles["number"]}>{data.content}</div>
             </div>
           </div>
         ))}

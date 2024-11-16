@@ -14,27 +14,27 @@ const AnaliticModal = () => {
   const analyticsData = [
     {
       color: "#61D61A",
-      number: 99,
+      content: 99,
       name: "tss",
     },
     {
       color: "#61D61A",
-      number: 0,
+      content: 0,
       name: "rc",
     },
     {
       color: "#F81A1A",
-      number: 99,
+      content: 99,
       name: "heat",
     },
     {
       color: "#F8D51A",
-      number: 12,
+      content: 12,
       name: "ddl",
     },
     {
       color: "#F8D51A",
-      number: 60,
+      content: 60,
       name: "prob",
     },
   ];
@@ -54,7 +54,7 @@ const AnaliticModal = () => {
     <div className={styles["modal"]}>
       <div>
         <ColorBlock colors={colors} />
-        <Analytics analyticsData={analyticsData} />
+        <Analytics analyticsData={analyticsData} title={"Аналитика"} />
         <Status />
         <Participants participants={participants} />
       </div>

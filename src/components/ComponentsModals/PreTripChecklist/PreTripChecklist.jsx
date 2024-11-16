@@ -8,6 +8,7 @@ import TaskList from "../TaskList/TaskList";
 import TabContent from "../TabContent/TabContent";
 import ImageOverlay from "../ImageOverlay/ImageOverlay";
 import AnaliticModal from "../AnaliticModal/AnaliticModal";
+import Analytics from "../AnaliticModal/Analytics/Analytics";
 
 const PreTripChecklist = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,13 @@ const PreTripChecklist = () => {
     { src: image2, alt: "Image 2" },
   ];
 
+  const analyticsData = [
+    {
+      color: "#F4822F",
+      content: "M",
+      name: "pri",
+    },
+  ];
   const handleImageClick = (src) => {
     setSelectedImage(src);
     setIsOpen(true);
@@ -63,7 +71,10 @@ const PreTripChecklist = () => {
     <div className={styles["container"]}>
       <div className={styles["left-column"]}>
         <div className={styles["modal_header"]}>
-          <h2 className={styles["title_modal"]}>Дела до отъезда</h2>
+          <div className={styles["container-title-modal"]}>
+            <h2 className={styles["title_modal"]}>Дела до отъезда</h2>
+            <Analytics analyticsData={analyticsData} />
+          </div>
           <p className={styles["desc_modal"]}>
             Решить некоторое количество дел до отъезда из города
           </p>
